@@ -1,0 +1,316 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    font-size: 100%; 
+    outline: none; 
+    font-weight: 300; 
+    box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*HELPERS*/
+.radius {
+    border-radius: 7px;
+}
+
+/*====CONTAINER====*/
+.container{
+    width: 100%; 
+    float: left; 
+    padding: 2% 2%; 
+    text-align: center;
+}
+
+/*====BG COLORS====*/
+.bg-gradiente {     
+    background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+.bg-white {
+    background-color: #fff;
+}
+
+/*LOGO*/
+.logo { 
+    width: 56px; 
+    height: 56px; 
+    float: left; 
+    background: url(../img/logotm-mobile.png) center center/56px no-repeat; 
+    font-size: 0;
+    margin: 1%;
+}
+.btn-menu {
+    width:56px; 
+    height: 56px; 
+    margin: 1%;
+    float: right; 
+    text-align: center; 
+    color: #fff; 
+    border-radius: 56px; 
+    cursor: pointer;
+} 
+
+/*MENU*/
+.menu {
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    background-color: rgba(0,0,0,0.9); 
+    top: 0; 
+    left: 0;
+}
+.btn-close {
+    font-size: 1.5em; 
+    color: #fff; 
+    float: right; 
+    cursor: pointer; 
+    margin: 3% 3% 0 0;
+}
+.menu ul { 
+    width: 100%; 
+    float: right; 
+    text-align: center;
+}
+.menu li {
+    padding: 1.5%;
+}
+.menu li a { 
+    font-size: 2em; 
+    color: #fff; 
+    padding: 1.5% 3%;
+}
+.menu li a:hover {
+    color: #da6709;
+}
+
+/*BANNER*/
+.banner {
+    width: 100%;
+    background: url(../img/banmini.jpeg) no-repeat fixed ;
+}
+.banner h2 {
+    width: 90%; 
+    text-align: center; 
+    margin: 4%; 
+    font-family: 'Lato bold', sans-serif; 
+    font-size: 3em; 
+    color: #fff; 
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);   
+}
+.banner h3 {
+    width: 90%; 
+    margin: 4%; 
+    font-family: 'Lato bold', sans-serif; 
+    text-align: center; 
+    font-size: 1.5em; 
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+/*SERVIÇOS PAG PRINCIPAL*/
+.servico {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.servico img {
+    border-radius: 7px 7px 0 0;    
+}
+.inner {
+    padding: 7%;
+}
+.inner a {
+    font-size: 1.5em; 
+    color: #4F4F5C; 
+    font-weight: 700;
+}
+.inner h4 {
+    font-size: 1.2em;
+    color: #4F4F5C;
+    margin-top: 2%;
+}
+.inner p {
+    margin-top: 6%;
+    color: #4F4F5C;
+    line-height: 1.5em;
+}
+
+/*======SOBRE======*/
+
+.sobre {
+    background-color: #fff;
+    padding: 7%
+}
+.sobre p {
+    font-size: 1.5em;
+    color: #4F4F5C;
+    text-align: center;    
+}
+
+/*======CONTATO======*/
+.contato {
+    padding: 15% 5%;
+    background-color: #fff;
+}
+.contato td {
+    font-family: 'Lato' sans-serif;
+    font-size: 2em;
+    color: #4F4F5C;
+    padding: 5%;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+.contato i {
+    padding-right: 2%;
+}
+
+
+/*RODAPÉ*/
+.social-icons a {
+    font-size: 1.5em; 
+    color: rgba(255,255,255,0.7); 
+    margin-right: 2%;
+}
+.social-icons a:last-child {
+    margin-right: 0;
+}
+.social-icons a:hover {
+    color: rgba(255,255,255);
+}
+.social-icons p {
+    font-size: 11pt; 
+    display: inline; 
+    vertical-align: middle; 
+    margin-left: 7px;
+}
+.social-icons p:hover {
+    color: rgba(255,255,255);
+}
+.copyright {
+    padding: 2% 0 0 0; 
+    color: rgba(255, 255, 255, 0.7); 
+    font-size: 0.8em;
+}
+
+/*========MOBILE FIRST==========*/
+/*SMALL DEVICES - SMARTPHONES*/
+@media screen and (min-width: 480px) {
+.logo {
+    width: 250px; 
+    height: 83px; 
+    background: url(../img/logotm.png) center center/220px no-repeat; 
+    margin: 1%;
+    margin-left: 2%;
+}
+.banner {
+    background: url(../img/ban1.jpeg) no-repeat fixed;
+}
+.contato {
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+    padding: 3%;
+}
+
+}
+
+/*SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+.servico {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+.servico:nth-child(2){
+    margin-right: 0;
+}
+.servico:nth-child(4){
+    margin-right: 0;
+}
+.copyright {
+    font-size: 1em;
+}
+
+}
+
+/*MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+.btn-menu {
+    display: none;
+}
+.btn-close {
+    display: none;
+}   
+.menu {
+    width: auto; 
+    line-height: 100px; 
+    float: right; 
+    display: block!important; 
+    position: static; 
+    background: none;
+    margin-right: 4%;
+}
+.menu li {
+    margin-top: 10px; 
+    padding: 0; 
+    float: left;
+}
+.menu li a {
+    font-size: 1em; 
+    font-family: 'Lato bold', sans-serif; 
+    padding: 15px; 
+    color: #4F4F5C;
+}
+.menu li a:hover {
+    color: #da6709;
+}
+.banner h2 {
+    text-align: left; 
+    font-size: 3em; 
+    margin: 0;
+}
+.banner h3 {
+    text-align: right; 
+    font-size: 2.5em; 
+    margin: 1%;
+    padding: 1%;
+}
+.quemsomos p {
+    font-family: 'Lato' sans-serif;
+    font-size: 2em;
+    color: #4F4F5C;
+    text-align: justify; 
+    padding: 0 14% 0 14%; 
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.6);  
+}
+.contato {
+    background-color: #fff;
+    width: 100%;
+}
+.contato td {
+    font-size: 2.5em;
+    padding: 2%;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+.contato i {
+    font-size: 1em;
+}
+
+}
+
+/*LARGE DEVICES - WIDE SCREEN */
+@media screen and (min-width: 1280px) {
+
+}
+
+

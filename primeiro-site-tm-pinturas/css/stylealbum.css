@@ -1,0 +1,122 @@
+.albuns {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.albuns h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #4F4F5C;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 1%;
+    text-align: center;
+}
+
+.capa li {
+    width: 95%;
+    height: 95%;
+    margin: 3% 3%;
+    list-style: none;
+    border-radius: 2%; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.capa li span {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 9pt;
+    line-height: 400px;
+    padding: 5px;
+}
+
+.capa li#capa01 {
+    background: url(../img/_obrafreg/23.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+.capa li#capa02 {
+    background: url(../img/_azul/09.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+.capa li#capa03 {
+    background: url(../img/_mesclado/15.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+.capa li#capa04 {
+    background: url(../img/_textura/18.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+.capa li#capa05 {
+    background: url(../img/_quartotem/16.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+/*MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+    .albuns {
+        width: 100%;
+        margin: 0px auto;
+        padding: 1%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .albuns h3 {
+        font-family: 'Lato',  sans-serif;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: #4F4F5C;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        padding: 1%;
+        text-align: center;
+    }
+    .album ul {
+        width: 23%;
+        height: 23%;
+        margin: 1% 1% 5% 1%;
+        padding: 0;
+        list-style: none;
+    }
+    .capa li {
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.7); 
+    }
+    .capa li span {
+        opacity: 0;
+        color: #fff;
+        font-size: 16pt;
+        box-shadow: rgba(0,0,0,0.3);
+        line-height: 300px;
+    }
+    .capa li:hover {
+        transform: scale(1.5);
+        transition: all 0.4s ease-in;
+    }
+    .capa li span:hover {
+        opacity: 1;
+    }
+
+    
+    
+}

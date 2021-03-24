@@ -1,0 +1,128 @@
+/*SERVIÇOS*/
+.album {
+    width: 100%;
+    background-color: #fff;
+}
+.album h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 3%;
+    font-size: 1.5em;
+    color: #4F4F5C;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.album li {
+    float: left;
+    width: 90%;
+    height: 90%;
+    margin: 3% 5%;
+    list-style: none;
+    border-radius: 3%; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);   
+}
+.album li span {
+    opacity: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 9pt;
+    line-height: 300px;
+    padding: 5px;
+}
+
+.album li#foto1 {
+    background: url(../img/f1.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+} 
+.album li#foto2 {
+    background: url(../img/f2.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}  
+.album li#foto3 {
+    background: url(../img/f3.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto4 {
+    background: url(../img/f4.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto5 {
+    background: url(../img/f5.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto6 {
+    background: url(../img/f6.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto7 {
+    background: url(../img/f7.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto8 {
+    background: url(../img/f8.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto9 {
+    background: url(../img/f9.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+.album li#foto10 {
+    background: url(../img/f10.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+/*MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+    .album {
+        width: 100%;
+        margin: 0px auto;
+        padding: 50px;
+        overflow: hidden;
+    }
+    .album h2 {
+        font-family: 'Lato',  sans-serif;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: #4F4F5C;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        padding: 1%;
+    }
+    .album li {
+        width: 95%;
+        height: 95%;
+        margin: 1%;
+        list-style: none;
+        border-radius: 3%; 
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.7); 
+        display: inline-block;  
+    }
+    .album li span {
+        opacity: 0;
+        line-height: 200px;
+    }
+    .album li:hover {
+        transform: scale(2);
+        transition: all 0.4s ease-in;
+    
+    }
+}

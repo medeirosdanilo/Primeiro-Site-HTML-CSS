@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>T.M Pinturas e Efeitos</title>
+    <meta name="discription" content="Empresa especializada em pinturas e efeitos decorativos.">
+    <meta name="keywords" content="Pinturas, efeitos e decoração">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Danilo Augusto Melo Medeiros">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/794bbc8bc6.js" rel="stylesheet"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"> <h1 class="logo">T.M Pinturas e Efeitos</h1> </a>
+        <button class="btn-menu bg-gradiente"> <i class="fa fa-bars fa-lg"></i> </button>
+        <!--MENU-->
+        <nav class="menu">
+            <a class="btn-close"> <i class="fa fa-times"></i> </a>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="sobre.html">QUEM SOMOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--BANNER-->
+    <div class="banner container">
+                <h2>EFEITOS DECORATIVOS</h2>
+                <h3>CIMENTO QUEIMADO</h3>
+                <h3>MARMORATO</h3>
+                <h3>TEXTURAS E GRAFIATOS</h3>   
+                <h3>LIXAMENTO SEM PÓ</h3>             
+    </div>
+
+    <main class="servicos container">
+        <article class="servico bg-white radius">
+            <a href="#"><img src="img/cimento.jpeg" alt="efeito cimento queimado"></a>
+            <div class="inner">
+                <a href="#">Cimento Queimado</a>
+                <h4>Efeito liso</h4>
+                <p>Com técnicas e produtos de alta qualidade nossos profissionais conseguem desenvolver superficies com efeito de cimento queimado dando aquele toque especial no seu ambiente.</p>
+            </div>
+        </article>
+
+        <article class="servico bg-white radius">
+            <a href="#"><img src="img/marmorato.jpeg" alt="efeito marmorato"></a>
+            <div class="inner">
+                <a href="#">Marmorato</a>
+                <h4>Efeito liso</h4>
+                <p>Esse efeito surpreende com sua alta qualidade e perfeição em relação a pedras naturais, nossos profissionais desenvolvem esse efeito unico em seu ambiente, dando assim o requinte e a sofisticação que o seu ambiente merece.</p>
+            </div>
+        </article>
+
+        <article class="servico bg-white radius">
+            <a href="#"><img src="img/textura.jpeg" alt="efeitos textura e grafiato"></a>
+            <div class="inner">
+                <a href="#">Textura e Grafiato</a>
+                <h4>Efeito aspero e/ou com relevos</h4>
+                <p>O clássico que nunca sai de moda, nossas aplicações de texturas e grafiatos trazem um efeito rústico e moderno para seu ambiente com um acabamento rico em detalhes.</p>
+            </div>
+        </article>
+
+        <article class="servico bg-white radius">
+            <a href="#"><img src="img/lixamento.jpeg" alt="lixamento sem pó"></a>
+            <div class="inner">
+                <a href="#">Lixamento</a>
+                <h4>Lixamento de ponta</h4>
+                <p>O lixamento sem pó consiste em uma ferramenta de ultima geração que possibilita o lixamento das paredes sem produzir pó deixando sua obra muito mais limpa.</p>
+            </div>
+        </article>
+    </main>
+   
+<!--RODAPÉ--> 
+<footer class="rodape container bg-gradiente">
+    <div class="social-icons">
+        <a href="https://mail.google.com/" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/tmpinturaeefeitos" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <p class="copyright">
+        &copy;T.M Pinturas e Efeitos.
+    </p>
+</footer>
+<!--JQUERY-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>    
+<script>
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+    });
+    
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+    });
+</script>
+
+</body>
+
+</html>

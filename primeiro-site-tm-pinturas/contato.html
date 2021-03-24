@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>T.M Pinturas e Efeitos</title>
+    <meta name="discription" content="Empresa especializada em pinturas e efeitos decorativos.">
+    <meta name="keywords" content="Pinturas, efeitos e decoração">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Danilo Augusto Melo Medeiros">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/794bbc8bc6.js" rel="stylesheet"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"> <h1 class="logo">T.M Pinturas e Efeitos</h1> </a>
+        <button class="btn-menu bg-gradiente"> <i class="fa fa-bars fa-lg"></i> </button>
+        <!--MENU-->
+        <nav class="menu">
+            <a class="btn-close"> <i class="fa fa-times"></i> </a>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="sobre.html">QUEM SOMOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--BANNER CONTATO-->
+        <table class="contato container">
+            <tr> <td> <i class="fa fa-whatsapp fa-lg"> </i> (11) 9 7118-0526 </td> </tr>
+            <tr> <td> <i class="fa fa-whatsapp fa-lg"> </i> (11) 9 5772-8552 </td> </tr>
+            <tr> <td> <i class="fa fa-instagram fa-lg"> </i> @tmpinturaeefeitos </td> </tr>
+            <tr> <td> <i class="fa fa-envelope fa-lg"> </i> tmpinturaeefeitos@<wbr>gmail.com </td></tr>
+        </table>
+    <!--  -->
+   
+<!--RODAPÉ--> 
+<footer class="rodape container bg-gradiente">
+    <div class="social-icons">
+        <a href="https://mail.google.com/" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/tmpinturaeefeitos" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <p class="copyright">
+        &copy;T.M Pinturas e Efeitos.
+    </p>
+</footer>
+<!--JQUERY-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>    
+<script>
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+    });
+    
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+    });
+</script>
+
+</body>
+
+</html>
